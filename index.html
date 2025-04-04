@@ -5,34 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Belly Button Biodiversity</title>
   
-  <!-- Correctly linking to the style.css file -->
+  <!-- Link to external CSS -->
   <link rel="stylesheet" href="static/css/style.css">
   
-  <!-- Linking to Plotly and D3.js for chart rendering -->
+  <!-- Include Plotly.js for charting -->
   <script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
+  
+  <!-- Include D3.js for handling data -->
   <script src="https://d3js.org/d3.v5.min.js"></script>
+  
 </head>
 <body>
   <h1>Belly Button Biodiversity Dashboard</h1>
   
   <div>
     <label for="selDataset">Select Test Subject ID:</label>
-    <select id="selDataset" onchange="optionChanged(this.value)">
-      <!-- Options will be populated by JavaScript -->
-    </select>
+    <select id="selDataset" onchange="optionChanged(this.value)"></select>
   </div>
 
-  <!-- Section for displaying sample metadata -->
   <div id="sample-metadata"></div>
 
-  <!-- Section for the bar chart -->
+  <!-- Divs for the charts -->
   <div id="bar"></div>
-
-  <!-- Section for the bubble chart -->
   <div id="bubble"></div>
 
-  <!-- Correctly linking to the app.js file -->
+  <!-- Include external JavaScript file -->
   <script src="static/js/app.js"></script>
+  
 </body>
 </html>
+
+
 
