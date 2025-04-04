@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Belly Button Biodiversity</title>
+  <script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+  <h1>Belly Button Biodiversity Dashboard</h1>
+  <div>
+    <label>Select Test Subject ID:</label>
+    <select id="selDataset" onchange="optionChanged(this.value)"></select>
+  </div>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <div id="sample-metadata"></div>
+  <div id="bar"></div>
+  <div id="bubble"></div>
+
+  <!-- Load your JS file -->
+  <script src="static/js/app.js"></script>
+</body>
+</html>
